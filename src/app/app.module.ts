@@ -6,16 +6,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 
+import {routing} from './app.routing';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
-    ContentComponent
+    ContentComponent,
+    DashboardComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, routing],
   providers: [],
   bootstrap: [AppComponent]
 })
